@@ -1,0 +1,140 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #11131c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+main{
+  min-height: 50vh;
+}
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
+h1 span{
+  color:#E45B56;
+}
+
+
+footer{
+  display: flex;
+  background-color: #E1E3E9;
+  color: #11131c;
+  margin: 0;
+}
+
+footer div{
+  width: 30%;
+}
+footer div{
+  padding: 8px;
+}
+
+p{
+  text-align: justify;
+}
+.quick-links{
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+li{
+  padding: 8px;
+  margin: 0;
+  transition: ease-in 0.5s;
+}
+
+li:hover{
+  color:#E45B56;
+  cursor: pointer;
+}
+
+.social{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news{
+  width: 100%;
+  display: flex;
+}
+h3,h4{
+  margin: 8px;
+}
+input[type="email"]{
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #11131c;
+  padding: 8px;
+  width: 70%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+button{
+  width: 30%;
+  color: #E45B56;
+  font-weight: 600;
+  padding: 8px;
+  background-color: #11131c;
+  outline: none;
+  border: 2px solid #11131c;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: ease 0.2s;
+}
+button:hover{
+  color: #11131c;
+  background-color: #E45B56;
+}
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons div{
+  border: 1px solid #11131c;
+  margin: 8px;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: ease 0.5s;
+}
+
+.social-icons div:hover{
+  background-color: #11131c;
+  transform: scale(1.2);
+  color: #E45B56;
+  box-shadow:  0 10px 10px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 768px) {
+  footer{
+    flex-direction: column;
+  }
+  .quick-links,.social,.about{
+    width: 95%;
+  } 
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #11131c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+/* purple #f1f0fe #9895e8 */
+
+.big{
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+  align-items: center;
+}
+.branding{
+  padding: 0;
+  margin: 0;
+}
+.logo{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 40px;
+  color: #11131c;
+  padding: 0px 8px;
+  background-color: #E1E3E9;
+  border-radius: 2px;
+
+}
+
+.menu ul{
+  list-style-type: none;
+  display: flex;
+}
+li{
+  padding: 4px 8px;
+  margin: 4px 8px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: ease 0.5s;
+}
+
+li:hover{
+  color: #11131c;
+  cursor: pointer;
+  background-color: #E1E3E9;
+  border-radius: 1rem;
+}
+button{
+  background-color: #E1E3E9;
+  border: none;
+  padding: 4px 20px;
+  color: #11131c;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: ease-in-out 0.5s;
+}
+
+button:hover{
+  background-color: #11131c;
+  color: #E1E3E9;
+  border: 1px solid #E1E3E9;
+  box-shadow: 0px 10px 10px rgba(249, 247, 247, 0.233);
+}
+
+.small{
+  display: flex;
+  justify-content: space-between;
+  visibility: hidden;
+  width: 100;
+  padding: 0;
+  margin: 0;
+}
+.icon{
+  padding: 8px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.smalls{
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .big{
+    display: none;
+  } 
+  .small{
+    visibility: visible;
+  }
+  .smalls{
+    padding: 8px;
+  }
+  .smalls .list{
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(234, 225, 225, 0.397);
+    border: 1px solid #e1e3e9;
+    transition: visibility 1s ease;    
+  }
+  
+  .smalls .open .list{
+    visibility: visible;
+  }
+  
+}

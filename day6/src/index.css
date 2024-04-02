@@ -1,0 +1,70 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.details{
+  margin: 16px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  transition: ease-in 0.3s;
+}
+
+.icon{
+  display: flex;
+  align-items:flex-start;
+}
+
+.heart{
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  margin: 4px 8px;
+  background-color: transparent;
+  color: red;
+}
+.details:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 8px rgba(239, 232, 232, 0.829);
+}
+.image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}
+
+.pricing{
+  padding: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .details{
+    width: 100%;
+  }
+  
+}

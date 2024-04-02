@@ -1,0 +1,107 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #11131c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.card {
+  width: 60%;
+  border-radius: 4px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(160, 168, 216, 0.247);
+}
+
+.signup {
+  padding: 16px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d9d9d9;
+  transition: transform 0.5s ease-in-out; /* Use ease-in-out for smoother transitions */
+
+}
+
+.login {
+  padding: 16px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e2231;
+  transition: transform 0.5s ease-in-out; 
+
+}
+
+.login.slide-opposite {
+  transform: translateX(100%); 
+}
+
+.signup.slide-opposite {
+  transform: translateX(-100%); 
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  margin: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #11131c;
+  width: 100%;
+}
+.login input{
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.login input::placeholder {
+  color: #d9d9d9;
+}
+
+input[type="submit"],
+ button {
+  background-color: transparent; 
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.login input[type="submit"], .login button{
+  border: 1px solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.signup input[type="submit"], .signup button{
+  border: 1px solid #1e2231;
+  color: #1e2231;
+  transition: ease-in 0.5s;
+}
+
+.signup input[type="submit"]:hover, .signup button:hover{
+  border: 1px solid #d9d9d9;
+  color: #d9d9d9;
+  background-color: #11131c;
+}
+.signup{
+  color: #1e2231;
+}
