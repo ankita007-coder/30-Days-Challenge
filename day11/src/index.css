@@ -1,0 +1,60 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  margin-top: 5%;
+}
+
+.sort{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  width: 250px;
+  height: 300px;
+  margin: 8px;
+  border: 1px solid rgba(243, 237, 237, 0.895);
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.para{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+h1{
+  font-size: 2rem;
+}
+select{
+  width: 20%;
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+img{
+  height: 150px;
+  width: 100%;
+}

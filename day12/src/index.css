@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #003C43;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  padding: 16px;
+  background-color: #135D66;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px #77B0AA;
+}
+
+
+input:focus, input:active{
+  outline: none;
+}
+input::placeholder{
+  color: #E3FEF7;
+}
+
+input[type="submit"]{
+  margin-top: 16px;
+  border: 1px solid #E3FEF7;
+}
+
+.error{
+  color: red;
+  font-size: 0.8rem;
+
+}
+
+.err{
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #E3FEF7;
+  padding: 8px;
+  margin: 8px;
+  color: #E3FEF7;
+}
