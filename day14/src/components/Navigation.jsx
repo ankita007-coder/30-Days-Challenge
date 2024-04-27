@@ -103,6 +103,10 @@ const Wrapper = styled.div`
             border-radius: 16px;
         }
     }
+
+    @media screen and (max-width:768px){
+        display: none;
+    }
 `
 
 export default Navigation;

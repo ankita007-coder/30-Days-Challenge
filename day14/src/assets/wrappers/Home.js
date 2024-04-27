@@ -62,6 +62,23 @@ const Wrapper = styled.div`
         }
         
     }
+    @media screen and (max-width: 768px){
+        flex-direction: column-reverse;
+        margin: 16px 0px;
+        .text{
+            width: 95%;
+            margin: 1rem 1rem;
+            p{
+            width: 100%;
+        }
+        }
+        .image {
+            width: 95%;
+            img{
+            width: 90%;
+        }}
+        
+    }
 `
 
 export default Wrapper

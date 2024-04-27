@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import { Contact, Experience, Home, Intro, Project, Skills } from "./pages";
-import { Navigation } from "./components";
-
+import { Navigation, SmallNavigation } from "./components";
 
 const App = () => {
   return <Router>
     <Navigation/>
+    <SmallNavigation/>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/introduction" element={<Intro/>} />

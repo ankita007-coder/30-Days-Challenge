@@ -7,5 +7,27 @@ body{
   background-color: #1D2228;
   font-family: "Inter", sans-serif;
   color: white;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
+
+.timeline{
+    background-color:#2C3238; 
+    width: 40%; 
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 2px 4px 2px rgba(181, 170, 226, 0.724);
+    margin: auto auto;
+  }
+@media screen and (max-width: 768px) {
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+  }
+  .timeline{
+    width: 85%;
+    margin-top: 40%;
+  }
+}
+
